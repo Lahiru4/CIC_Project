@@ -1,0 +1,7 @@
+CREATE DATABASE cicAgriBanana;
+CREATE TABLE Adimen(
+	email VARCHAR(50)PRIMARY KEY,
+	full_name VARCHAR(50)UNIQUE NOT NULL,
+	password VARCHAR(50)NOT NULL,
+	account_type ENUM('Manager','crop Harvestor','Financial Officer')
+);
